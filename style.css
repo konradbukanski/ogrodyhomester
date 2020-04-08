@@ -37,6 +37,19 @@ header i{
     background-color: #202020;
     color: antiquewhite;
 }
+@media only screen and (max-width: 768px) {
+    .header__tel{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    header{
+        font-size: 22px;
+    }
+    .header__tittle img{
+        width: 30px;
+    }
+}
 
 .baner{
     min-height: 60vh;
@@ -55,17 +68,26 @@ header i{
     line-height: 30px;
     display: flex;
 }
-@media only screen and (max-width: 768px) {
+
+.about span{
+    margin: auto; 
+    padding-left: 30px;
+}
+@media only screen and (max-width: 992px) {
     .about{
-        padding: 20px;
+        padding: 40px;
     }
     /* .about img{
         width: 50%;
     } */
 }
-.about span{
-    margin: auto; 
-    padding-left: 30px;
+@media only screen and (max-width: 768px) {
+    .about{
+        display: block;
+    }
+    .about img{
+        width: 20%;
+    }
 }
 .description{
     margin: 10px auto;
@@ -116,6 +138,11 @@ header i{
         margin: 10px 0;
     }
 }
+@media only screen and (max-width: 600px){
+    .description__item{
+        text-align: center;
+    }
+}
 
 .about__img img{
     position: absolute;
@@ -144,7 +171,7 @@ main{
     padding: 0 30px;
     margin: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .business{
         width: 90%;
         flex-direction: column;
@@ -156,6 +183,20 @@ main{
     .business span{
         padding: 0px;
         text-align: center;
+    }
+}
+@media only screen and (max-width: 600px){
+    .business{
+        width: 90%;
+        flex-direction: column;
+    }
+    .business img{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .business span{
+        padding: 0px;
+        /* text-align: left; */
     }
 }
 .contact{
@@ -218,6 +259,19 @@ width: 50%;
 .info__right{
     width: 50%;
 }
+@media only screen and (max-width: 768px) {
+    .info{
+        flex-direction: column;
+    }
+    .info__left{
+    width: 90%;
+    margin: 0 auto;
+    }
+    .info__right{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 footer{
     display: flex;
     justify-content: space-around;
@@ -226,6 +280,14 @@ footer{
 footer a{
     text-decoration: none;
     color: #000;
+}
+@media only screen and (max-width: 768px) {
+    footer{
+        flex-direction: column-reverse;
+    }
+    footer a, footer span{
+        margin: 5px auto;
+    }
 }
 .familybaner{
     margin: 80px 0;
