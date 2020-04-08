@@ -55,6 +55,14 @@ header i{
     line-height: 30px;
     display: flex;
 }
+@media only screen and (max-width: 768px) {
+    .about{
+        padding: 20px;
+    }
+    /* .about img{
+        width: 50%;
+    } */
+}
 .about span{
     margin: auto; 
     padding-left: 30px;
@@ -90,6 +98,25 @@ header i{
     border-radius: 5px;
     /* padding-top: 50%; */
 }
+@media only screen and (max-width: 768px) {
+    .description{
+        padding: 10px 30px;
+    }
+    .description__item{
+        flex-direction: column-reverse;
+    }
+    .reverse{
+        flex-direction: column;
+    }
+    .description__item span{
+        padding: 0;
+    }
+    .description__item img{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
 .about__img img{
     position: absolute;
     top: 50%;
@@ -115,6 +142,20 @@ main{
 }
 .business span{
     padding: 40px;
+}
+@media only screen and (max-width: 768px) {
+    .business{
+        width: 90%;
+        flex-direction: column;
+    }
+    .business img{
+        width: 60%;
+        margin: 20px auto;
+    }
+    .business span{
+        padding: 0px;
+        text-align: center;
+    }
 }
 .contact{
     width: 80%;
