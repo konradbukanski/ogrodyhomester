@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    height: 200vh;
+    cursor: default;
+}
+header{
+    /* clip-path: polygon(0 0, 100% 0, 100% 71%, 0% 100%); */
+    /* height: 100px; */
+    /* background-color: #134; */
+    display: flex;
+    justify-content: space-between;
+    color: #5a5a5a;
+    padding: 25px;
+    font-size: 30px;
+    position: sticky;
+    top: 0;  
+    z-index: 1;
+    transition: 0.5s;
+    background-color: rgb(252, 252, 252);
+    line-height: 35px;
+}
+header i{
+    font-size: 20px;
+}
+.header__tittle img{
+    width: 40px;
+    height: 35px;
+}
+.scroll{
+    font-size: 20px;
+    padding: 15px 25px;
+    /* border-bottom: 1px solid #5a5a5a; */
+    background-color: #202020;
+    color: antiquewhite;
+}
+
+.baner{
+    min-height: 60vh;
+    background-image: url('img/planting.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.about{
+    /* display: flex; */
+    /* width: 80%; */
+    margin: 10px auto;
+    padding: 20px 10%;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+}
+.about span{
+    margin: auto; 
+    padding-left: 30px;
+}
+.description{
+    margin: 10px auto;
+    padding: 0px 10%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.description img{
+    width: 100%;
+}
+.description__item{
+    /* width: 50%; */
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.description__item--text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 17px;
+}
+.description__item span{
+    padding: 20px;
+}
+.description__item img{
+    position: relative;
+    width: 45%;
+    border-radius: 5px;
+    /* padding-top: 50%; */
+}
+.about__img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    transition: 1s;
+    /* width: 50px; */
+}
+main{
+    background-color: rgb(252, 252, 252);
+}
+.business{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+}
+.business img{
+    width: 30%;
+    border-radius: 5px;
+}
+.business span{
+    padding: 40px;
+}
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+}
+.contact__form input{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact__form textarea{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contact__form button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    border: 1px solid rgb(14, 61, 22);
+    background-color: rgb(255, 255, 255);
+    color:rgb(14, 61, 22);
+    cursor: pointer;
+    transition: .2s;
+    font-weight: 800;
+}
+.contact__form button:hover{
+    border: 1px solid rgb(14, 61, 22);
+    background-color: rgb(14, 61, 22);
+    color: #fff;
+
+}
+
+.info{
+    display: flex;
+    /* width: 80%; */
+    /* margin: 20px 0; */
+    padding: 50px 10% 80px 10%;
+    text-align: center;
+    background-color: #202020;
+    color: #fff;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
+    position: relative;
+}
+.info span{
+    margin-top: 30px;
+    display: block;
+}
+.info__left{
+width: 50%;
+}
+.info__right{
+    width: 50%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+.familybaner{
+    margin: 80px 0;
+    background-image: url('img/garden.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    /* filter: grayscale(60%); */
+    /* color: #fff; */
+    font-weight: 400;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
+}
+.familybaner span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 23px;
+    border-radius: 10px;
+    color: #ccc;
+}
